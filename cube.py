@@ -146,20 +146,6 @@ def text_preview(frame,stickers):
             sym,x1,y1=text[name][0],text[name][1],text[name][2]
             cv2.putText(preview, sym, (x1,y1), font,1,(0, 0, 0), 1, cv2.LINE_AA) 
 
- 
-        
-'''def texton_preview_stickers2(frame,stickers):
-        cv2.putText(preview2,"ENTER : SOLVE", (50,100), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"1 : CHECKER (2 FACE)", (50,150), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"2 : CHECKER (6 FACE)", (50,200), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"3 : WIRE", (50,250), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"4 : CROSS", (50,300), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"5 : PLUS MINUS", (50,350), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"6 : 4 SPOTS", (50,400), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"7 : 6 SPOTS", (50,450), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"8 : 6 Ts", (50,500), font,1,(255,255,255), 1, cv2.LINE_AA)
-        cv2.putText(preview2,"9 : TETRIS", (50,550), font,1,(255,255,255), 1, cv2.LINE_AA)'''
-
 
 
 def fill_stickers(input_frame,stickers,sides):    
@@ -297,9 +283,6 @@ def process(operation):
         cv2.putText(preview,str(len(operation)), (500,620), font,1,(255,255,255), 1, cv2.LINE_AA)
         cv2.putText(preview,"CURRENT MOVE :", (400,50), font,1,(255,255,255), 1, cv2.LINE_AA)
         cv2.putText(preview, i, (550,50), font, 1 ,(255,255,255), 2, cv2.LINE_AA)
-        #fill_stickers(preview,stickers,State)
-        #solution.append(preview)
-        #cv2.imshow('Solution_2D',preview)
         cv2.putText(threeD,"CURRENT MOVE :", (100,40), font,1,(255,255,255), 1, cv2.LINE_AA)
         cv2.putText(threeD, i, (400,40), font, 1 ,(255,255,255), 2, cv2.LINE_AA)
         cv2.putText(threeD, "NUMBER OF MOVES : ", (100,450), font, 1 ,(255,255,255), 1, cv2.LINE_AA)
